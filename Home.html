@@ -3,15 +3,37 @@
 
 <head>
     <title>Home</title>
+
+    <style>
+        .container {
+            border: 4px solid red;
+            margin: 4px;
+        }
+
+        .mountain {
+            border: 3px dotted blue;
+            margin: 10px;
+        }
+
+        .season {
+            border: 3px inset violet;
+            margin: 8px;
+        }
+
+        #winter {
+            border: 9px ridge red;
+            margin: 12px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Welcome to Serbia Tourism</h1>
 
-    <div id="populardestinations">
+    <div id="populardestinations" class="container">
         <h2>Popular Destinations</h2>
 
-        <div id="zlatibor">
+        <div id="zlatibor" class="mountain">
             <h3>Zlatibor</h3>
 
             <h4>Things to do</h4>
@@ -27,7 +49,7 @@
             <h6>About second one</h6>
         </div>
 
-        <div id="tara">
+        <div id="tara" class="mountain">
             <h3>Tara</h3>
 
             <h4>Things to do</h4>
@@ -43,7 +65,7 @@
             <h6>About second one</h6>
         </div>
 
-        <div id="rtanj">
+        <div id="rtanj" class="mountain">
             <h3>Rtanj</h3>
 
             <h4>Things to do</h4>
@@ -59,7 +81,7 @@
             <h6>About second one</h6>
         </div>
 
-        <div id="stara-planina">
+        <div id="stara-planina" class="mountain">
             <h3>Stara Planina</h3>
 
             <h4>Things to do</h4>
@@ -76,10 +98,10 @@
         </div>
     </div>
 
-    <div id="serbianclimate">
+    <div id="serbianclimate" class="container">
         <h2>Serbian Climate</h2>
 
-        <div id="spring">
+        <div id="spring" class="season">
             <h3>Spring</h3>
             <p>March: Daytime highs around 10°C, nights near 0°C. Weather is unstable, with frequent rain and occasional
                 frost</p>
@@ -88,7 +110,7 @@
                 activities.</p>
         </div>
 
-        <div id="summer">
+        <div id="summer" class="season">
             <h3>Summer</h3>
             <p>June: Warm, averaging 25°C, with longer sunny days.</p>
             <p>July-August: Hot and dry, especially in lowland areas, with highs often exceeding 30°C. Belgrade and
@@ -97,7 +119,7 @@
             <p>Key feature: Summers are hot and dry, ideal for festivals and river activities.</p>
         </div>
 
-        <div id="autumn">
+        <div id="autumn" class="season">
             <h3>Autumn</h3>
             <p>September: Mild and pleasant, around 20°C, with less rainfall.</p>
             <p>October: Cooler, 12-16°C, with colorful foliage and frequent fog in valleys.</p>
@@ -106,7 +128,7 @@
             </p>
         </div>
 
-        <div id="winter">
+        <div id="winter" class="season">
             <h3>Winter</h3>
             <p>December-January: Coldest months, with daytime highs around 3-6°C and frequent snow, especially in
                 central and southern Serbia.</p>
