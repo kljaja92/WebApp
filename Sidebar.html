@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="Sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h4>Sidebar</h4>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class="fa-solid fa-qrcode"></i>Dashboard</a></li>
+            <li class="sub-menu"><a href="#"><i class="fa-brands fa-yelp"></i>Products <i
+                        class="fa-solid fa-chevron-down indicator"></i></a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>Electronics</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>Appliances</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>Fashion</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu"><a href="#"><i class="fa-solid fa-calendar"></i>Events<i
+                        class="fa-solid fa-chevron-down indicator"></i></a>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-calendar"></i>Today</a></li>
+                    <li><a href="#"><i class="fa-solid fa-calendar"></i>Tomorrow</a></li>
+                    <li><a href="#"><i class="fa-solid fa-calendar"></i>Next Week</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(".sub-menu a").click((event) => {
+            $(event.target).parent().find("ul").slideToggle();
+            $(event.target).parent().find(".indicator").toggleClass("reverse");
+        });
+    </script>
+
+</body>
+
+</html>

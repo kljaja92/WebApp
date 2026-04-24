@@ -8,219 +8,31 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=landscape" />
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.2em;
-        }
-
-        .container {
-            border: 4px solid red;
-            margin: 4px;
-        }
-
-        .mountain {
-            border: 3px dotted blue;
-            margin: 10px;
-            font-weight: bold;
-        }
-
-        .season {
-            border: 3px inset violet;
-            margin: 8px;
-            /* font-weight: lighter; */
-            text-align: justify;
-            padding: 5px;
-            width: 30%;
-            height: 300px;
-            overflow: auto;
-            float: left;
-            min-width: 400px;
-            max-width: 450px;
-        }
-
-        /* #winter {
-            border: 9px ridge red;
-            margin: 12px;
-        } */
-
-        .mountainheading {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 2vw;
-            text-decoration: underline #ff0000 wavy;
-        }
-
-        .seasonheading {
-            font-family: cursive;
-            font-size: 160%;
-            font-style: italic;
-            color: #132c9e;
-        }
-
-        h1 {
-            font: 40px 'Arial Black';
-            color: rgba(22, 150, 60, 03);
-        }
-
-        h4 {
-            text-transform: capitalize;
-        }
-
-        /* .seasonparagraph {
-            text-indent: 50px;
-            letter-spacing: 3px;
-            line-height: 1.7;
-            word-spacing: 3px;
-            text-shadow: 1px 1px 2px #000000;
-            white-space: normal;
-            direction: rtl;
-            unicode-bidi: bidi-override;
-        } */
-
-        .highlights {
-            font-weight: bolder;
-            color: #23b152;
-        }
-    </style>
+    <link href="css/Styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Welcome to Serbia Tourism</h1>
 
-    <div id="populardestinations" class="container">
-        <h2>Popular Destinations</h2>
-
-        <div id="zlatibor" class="mountain">
-            <h3 class="mountainheading"><span class="material-symbols-outlined">
-                    landscape
-                </span> Zlatibor</h3>
-
-            <h4>Things to do</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-
-            <h4>Day Plans</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-        </div>
-
-        <div id="tara" class="mountain">
-            <h3 class="mountainheading"><span class="material-symbols-outlined">
-                    landscape
-                </span> Tara</h3>
-
-            <h4>Things to do</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-
-            <h4>Day Plans</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-        </div>
-
-        <div id="rtanj" class="mountain">
-            <h3 class="mountainheading"><span class="material-symbols-outlined">
-                    landscape
-                </span> Rtanj</h3>
-
-            <h4>Things to do</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-
-            <h4>Day Plans</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-        </div>
-
-        <div id="stara-planina" class="mountain">
-            <h3 class="mountainheading"><span class="material-symbols-outlined">
-                    landscape
-                </span> Stara Planina</h3>
-
-            <h4>Things to do</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
-
-            <h4>Day Plans</h4>
-            <h5>First one</h5>
-            <p>About first one</p>
-            <h5>Second one</h5>
-            <p>About second one</p>
+    <!-- navbar starts here -->
+    <div id="navbar">
+        <div class="navbar-brand">Serbia Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Cities.html">Cities</a></li>
+                <li><a href="Destinations.html">Destinations</a></li>
+            </ul>
         </div>
     </div>
+    <!-- navbar ends here -->
 
-    <div id="serbianclimate" class="container">
-        <h2>Serbian Climate</h2>
+    <div class="copy-rights">All &copy; rights reserved</div>
 
-        <div id="spring" class="season">
-            <h3 class="seasonheading"><span class="fa fa-cloud-sun"></span>Spring</h3>
-            <p class="seasonparagraph"><span class="highlights">March</span>: Daytime highs around 10°C, nights near
-                0°C. Weather is unstable, with frequent rain and occasional
-                frost</p>
-            <p class="seasonparagraph"><span class="highlights">April-May</span>: Temperatures rise to 15-22°C, but
-                sudden showers and thunderstorms are common.</p>
-            <p class="seasonparagraph"><span class="highlights">Key feature</span>: Spring is transitional and often
-                unpredictable, making it less reliable for outdoor
-                activities.</p>
-        </div>
+    <div class="box">India</div>
+    <div class="box">USA</div>
+    <div class="box" id="japan">Japan</div>
+    <div class="box">Australia</div>
 
-        <div id="summer" class="season">
-            <h3 class="seasonheading"><span class="fa fa-sun"></span>Summer</h3>
-            <p class="seasonparagraph"><span class="highlights">June</span>: Warm, averaging 25°C, with longer sunny
-                days.</p>
-            <p class="seasonparagraph"><span class="highlights">July</span>-<span class="highlights">August</span>: Hot
-                and dry, especially in lowland areas, with highs often exceeding 30°C. Belgrade and
-                northern Serbia can experience heatwaves.</p>
-            <p class="seasonparagraph"><span class="highlights">Highlands</span>: Cooler, with pleasant temperatures
-                around 20-25°C, making mountain resorts popular.</p>
-            <p class="seasonparagraph"><span class="highlights">Key feature</span>: Summers are hot and dry, ideal for
-                festivals and river activities.</p>
-        </div>
-
-        <div id="autumn" class="season">
-            <h3 class="seasonheading"><span class="fa fa-cloud-rain"></span>Autumn</h3>
-            <p class="seasonparagraph"><span class="highlights">September</span>: Mild and pleasant, around 20°C, with
-                less rainfall.</p>
-            <p class="seasonparagraph"><span class="highlights">October</span>: Cooler, 12-16°C, with colorful foliage
-                and frequent fog in valleys.</p>
-            <p class="seasonparagraph"><span class="highlights">November</span>: Cold sets in, with temperatures
-                dropping to 5-10°C and increased rainfall.</p>
-            <p class="seasonparagraph"><span class="highlights">Key feature</span>: Autumn is Serbia's most picturesque
-                season, with vibrant landscapes and moderate weather.
-            </p>
-        </div>
-
-        <div id="winter" class="season">
-            <h3 class="seasonheading"><span class="fa fa-cloud"></span>Winter</h3>
-            <p class="seasonparagraph"><span class="highlights">December</span>-<span class="highlights">January</span>:
-                Coldest months, with daytime highs around 3-6°C and frequent snow, especially in
-                central and southern Serbia.</p>
-            <p class="seasonparagraph"><span class="highlights">February</span>: Still cold, but slightly milder, with
-                temperatures rising toward 8°C.</p>
-            <p class="seasonparagraph"><span class="highlights">Northern Serbia</span>: Windy plains with dry, cool
-                winds.</p>
-            <p class="seasonparagraph"><span class="highlights">Mountains</span>: Heavy snowfall, making them prime ski
-                destinations.</p>
-            <p class="seasonparagraph"><span class="highlights">Key feature</span>: Winters are long, cold, and snowy,
-                particularly in mountainous regions.</p>
-        </div>
-
-    </div>
 </body>
 
 </html>
