@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/Styles.css" />
+
+    <style>
+        .photo-gallery {
+            width: 95%;
+            border: 1px solid #757575;
+            padding: 10px;
+            margin: auto;
+            margin-top: 100px;
+            height: 450px;
+        }
+
+        .photo {
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.5s;
+            width: 250px;
+            height: 180px;
+            background-size: cover;
+        }
+
+        .img-caption {
+            text-align: center;
+            margin-top: 120px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        .photo img {
+            border: 3px ridge #7c7b7b;
+            box-shadow: 0px 0px 2px 2px #7c7b7b;
+        }
+
+        #photoRtanj {
+            background-image: url(images/7f5f683c5b8d2edc17c01f4bae93f738.jpg);
+        }
+
+        #photoZlatibor {
+            background-image: url(images/R.jpg);
+        }
+
+        #photoTara {
+            background-image: url(images/Planina-Tara-pogled-na-Zaovine-Andjelka-Ducic--1024x760.jpeg);
+        }
+
+        #photoStaraPlanina {
+            background-image: url(images/stara-planina-mountain-range-viewed-path-towards-botev-peak-bulgaria-274675008.webp);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <div id="navbar">
+        <div class="navbar-brand">Serbia Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Cities.html">Cities</a></li>
+                <li><a href="Destinations.html">Destinations</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar ends here -->
+
+    <div class="photo-gallery">
+        <div class="photo" id="photoRtanj">
+            <div class="img-caption">Rtanj</div>
+        </div>
+
+        <div class="photo" id="photoZlatibor">
+            <div class="img-caption">Zlatibor</div>
+        </div>
+
+        <div class="photo" id="photoTara">
+            <div class="img-caption">Tara</div>
+        </div>
+
+        <div class="photo" id="photoStaraPlanina">
+            <div class="img-caption">Stara Planina</div>
+        </div>
+    </div>
+
+    <div class="center">
+        <picture>
+            <source srcset="images/sparrow.jpg" media="(min-width: 1000px)">
+            <source srcset="images/sparrow-small.jpg" media="(min-width: 200px)">
+            <img src="images/sparrow.jpg" width="500px" height="300px" alt="Sparrow" />
+        </picture>
+    </div>
+
+    <div class="center">
+        <audio controls="controls">
+            <source src="images/rain.mp3">
+            <source src="images/rain.ogg">
+            Audio tag is not supported in this browser.
+        </audio>
+    </div>
+
+    <div class="center">
+        <video controls="controls" width="700px">
+            <!-- <source src="images/trailer.mp4" type="video/mp4"> -->
+            <!-- <source src="images/trailer.ogg" type="video/ogg"> -->
+            <source src="images/trailer.webm" type="video/webm">
+            Video tag is not supported in this browser.
+        </video>
+    </div>
+
+    <div class="center">
+        <iframe width="805" height="453" src="https://www.youtube.com/embed/99w_x1SsK-g"
+            title="The Blood of Dawnwalker — Gameplay Overview (Part III) [4K] [subtitles available]" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="center">
+        <img src="images/workplace.jpg" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="35,42,270,344" href="https://www.bigbang.rs/" target="_blank">
+            <area shape="rect" coords="291,173,332,244" href="https://www.telekoplus.com/" target="_blank">
+            <area shape="circle" coords="335,300,48" href="https://kafeterija.com/" target="_blank">
+        </map>
+    </div>
+
+</body>
+
+</html>
